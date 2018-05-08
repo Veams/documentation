@@ -1,0 +1,23 @@
+{
+	"metadata": {
+		"title": "How to use Veams-Cli",
+		"lead": "Just one line in your console and after a cup of coffee be productive!",
+		"contentTitle": "Scaffold your project and make custom configurations."
+	},
+	"article": {
+		"articleModiferClass": false,
+		"articleClasses": false,
+		"articleHeader": {
+			"articleH1": "How? It is really easy ..."
+		},
+		"articleRTE": {
+			"rteContextClass": "content",
+			"rteClasses": "is-small",
+			"rtes": [
+				{
+					"rteMd": "resources/templating/data/pages/veams-cli/project/project__create.md"
+				}
+			]
+		}
+	}
+}

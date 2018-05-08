@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"title": "Which Template Engine do you want to install?",
+		"lead": "Use HandlebarsJS for static site generation."
+	},
+	"article": {
+		"articleModiferClass": false,
+		"articleClasses": false,
+		"articleHeader": {
+			"articleH1": "HandlebarsJS - Veams template engine for static site generation."
+		},
+		"articleRTE": {
+			"rteContextClass": "content",
+			"rteClasses": "is-small",
+			"rtes": [
+				{
+					"rteMd": "resources/templating/data/pages/veams-cli/project/project__templateEngines.md"
+				}
+			]
+		}
+	}
+}

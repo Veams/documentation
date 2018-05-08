@@ -1,0 +1,23 @@
+{
+
+	"metadata": {
+		"title": "Add JavaScript files to your project.",
+		"lead": "While you are developing you can easily scaffold Views, Models and Collections."
+	},
+	"article": {
+		"articleModiferClass": false,
+		"articleClasses": false,
+		"articleHeader": {
+			"articleH1": "Scaffold BackboneJS models, views and collection in ES Harmony, CommonJS or AMD syntax while you are developing!"
+		},
+		"articleRTE": {
+			"rteContextClass": "content",
+			"rteClasses": "is-small",
+			"rtes": [
+				{
+					"rteMd": "resources/templating/data/pages/veams-cli/js/js__sgJS.md"
+				}
+			]
+		}
+	}
+}

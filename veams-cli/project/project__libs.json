@@ -1,0 +1,25 @@
+{
+	"metadata": {
+		"title": "Libraries and Frameworks in Veams",
+		"lead": "Add famous Sass and JavaScript Libraries/Frameworks to your project.",
+		"menuLink": "Gulp Plugins",
+		"type": "Veams",
+		"sortOrder": "05"
+	},
+	"article": {
+		"articleModiferClass": false,
+		"articleClasses": false,
+		"articleHeader": {
+			"articleH1": "Veams has some great frameworks included. Just install them without any configuration."
+		},
+		"articleRTE": {
+			"rteContextClass": "content",
+			"rteClasses": "is-small",
+			"rtes": [
+				{
+					"rteMd": "resources/templating/data/pages/veams-cli/project/project__libs.md"
+				}
+			]
+		}
+	}
+}
