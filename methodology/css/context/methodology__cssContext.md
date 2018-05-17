@@ -1,126 +1,112 @@
 ### General
 
-To add a context we use two dashes like `.my-class--context`. Context styles are completely independent from other styles and should never override our global `data` styles of the instrument.
+To add a context we use two dashes like `.c-name--context`. Context styles are completely independent from other styles and should never override our global `data` styles of the instrument.
 
-### Example Snippet
+### Example HTML output
 
 ``` html
-<article class="c-article--default" data-css="c-article">
-	<header class="article__header">
-		<h1 class="article__h1">The PG methodology is designed to be used in large, long lived websites and projects.</h1>
-		<h2 class="article__h2">This is how we make our Sass structure scalable.</h2>
+<article class="c-article--default is-bg-higlight-1" data-css="c-article">
+	<header class="article__header is-header">
+		<time class="article__header-time" datetime="">11/16/2016</time>
+		<h1 class="article__header-headline">Article Headline</h1>
+		<h2 class="article__header-subline">Article Subline</h2>
+		<p class="article__header-intro">This is an intro text which can be used in every article component.</p>
 	</header>
-	<div class="article__content">
+	<div class="article__content is-visible">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto atque cupiditate dicta earum ex facilis harum incidunt, laboriosam officiis placeat quas recusandae, rerum, sit tempore tenetur. Impedit, velit.
 	</div>
+	<footer class="article__footer is-margin">
+        <a class="article__footer-link" href="#">Footer Link in Article</a>
+    </footer>
 </article>
 ``` 
 
 ### What is the advantage to use a context? 
 
-Context styles are scoped. They are a complete independent style for an instrument (Block or Component). Therefore we do not have any inheritance problems. 
+Context styles are scoped. They are a complete independent style for an instrument (Component). Therefore we do not have any inheritance problems.
 
 ### Example
 
 A Sass file can look like this: 
 
-#### _c-teaser.scss
+#### _article.scss
 
 ``` scss
 /* ===================================================
-TEASER COMPONENT
+ARTICLE COMPONENT
 =================================================== */
 
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-[data-css="c-teaser"] {
-	.teaser__link {
+[data-css="c-article"] {
+	/*
+	Header
+	----------------------- */
+	.article__header {
 	}
-	.teaser__wrapper {
-		@include float;
 
-		margin-top: 1rem;
+	.article__header-time {
 	}
-	.teaser__date {
+
+	.article__header-headline {
 	}
-	.teaser__headline {
-		font-size: 2rem;
-		font-weight: $font-bold;
-		font-family: $font-family;
-		margin-bottom: 1rem;
+
+	.article__header-subline {
 	}
-	.teaser__content {
+
+	.article__header-intro {
 	}
-	.teaser__footer {
+
+	/*
+	Content
+	----------------------- */
+	.article__content {
+	}
+
+	/*
+	Footer
+	----------------------- */
+	.article__footer {
+	}
+
+	.article__footer-link {
 	}
 }
 
 /* ---------------------------------------------------
-Context: Home Teasers
+Context: Default Example
 --------------------------------------------------- */
-.c-teaser--home {
-	@include span-columns(3);
-	@include omega(4n);
-	margin-top: 1.5rem;
-	margin-bottom: 3rem;
-
-	.teaser__wrapper {
-		position: relative;
+.c-article--default {
+	/*
+	Header
+	----------------------- */
+	.article__header {
+		margin-bottom: 3rem;
 	}
 
-	.teaser__headline {
-		text-align: center;
+	.article__header-time {
+		font-size: 1.2rem;
 	}
 
-	.teaser__figure {
-		z-index: 1;
+	.article__header-headline {
+		font-size: 2.8rem;
+		margin-bottom: 1.15rem;
 	}
 
-	.teaser__content {
-		font-size: 1.8rem;
-		text-align: center;
-	}
-}
-
-/* ---------------------------------------------------
-Context: Intro Teasers
---------------------------------------------------- */
-.c-teaser--intro {
-	@include span-columns(2.4);
-	@include omega(5n);
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-
-	.teaser__link {
-		background-color: transparent;
-		color: color(highlight-dark);
-		text-decoration: none;
-		transition: all $transition-duration $transition-ease-method;
-		display: block;
-
-		&:hover {
-			background-color: color(highlight-main);
-		}
+	.article__header-subline {
+		font-size: 2.2rem;
+		margin-bottom: .75rem;
 	}
 
-	.teaser__wrapper {
-		position: relative;
-	}
-
-	.teaser__headline {
-		text-align: center;
-	}
-
-	.teaser__figure {
-		z-index: 1;
-		margin-bottom: 1rem;
-	}
-
-	.teaser__content {
-		font-family: $font-family;
+	.article__header-intro {
 		font-size: 2rem;
-		line-height: 1.45;
-		text-align: center;
+		font-weight: 900;
+	}
+
+	.article__footer {
+		margin-top: 3rem;
 	}
 }
+
 ```
