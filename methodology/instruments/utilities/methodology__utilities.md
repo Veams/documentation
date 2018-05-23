@@ -9,21 +9,15 @@ Examples are:
 1. Grid systems per class
 2. Multiple sections in regions
 
-You do not have to use Utilities when you think it is not necessary - this is up to you.  
+> You do not have to use Utilities when you think it is not necessary - this is up to you.
 
 ### Why do we use Utilities?
 
 We use Utilities to simplify the differentiation between `Components` and helper markup.
 
-### Structure
-
-When we use Utilities, we prefix them with `u-` (or `_u-` for scss files). The declaration helps us structuring our code base. 
-
-But you can also just forget the prefix when you are using frameworks with predefined classes.
-
 #### Example Snippet
 
-``` hbs
+``` html
 <div class="u-grid-row">
     <div class="u-grid-col is-3">
     </div>
@@ -34,54 +28,47 @@ But you can also just forget the prefix when you are using frameworks with prede
 </div>
 ```
 
-### File/Folder Structure
+### Examples of utlilities: 
+
+* Grid System
+
+
+### File and Folder Structure
 
 When you use a Template Engine, it is important to create a folder for your utilities. 
 
 Our utilities folder structure can look like this: 
 
 ``` bash
-    └───partials
-        └───utilities
-               u-grid-row.hbs
-               u-grid-col.hbs
-               u-section.hbs
-
+src
+├── app
+│   └──shared
+│       └── utilities
+│           └── grid
+│               ├── data
+│               │   └── grid.hjson
+│               ├── styles
+│               │   └── _grid.scss
+│               ├── templates
+│               │   ├── grid-usage.hbs
+│               │   ├── grid-col.hbs
+│               │   └── grid-row.hbs
+│               ├── grid.settings.hjson
+│               └── README.md
 ```
-
-### Styles and Sass Structure
-
-The styles are scoped to the utility. 
-
-For each Utility we create a Sass file. The folder can look like this: 
-
-``` bash
-├───scss
-	└───utilities
-			_u-grid-row.scss
-			_u-grid-col.scss
-			_u-section.scss
-```
-
-### Examples
-
-Here are some examples: 
-
-* Grid System
-* Sections
 
 #### Grid Row
 
 ``` hbs
-<div class="u-grid-row">
-\{{{yield}}}
+<div class="u-grid-row{{#unless props.padding}} is-collapsed{{/unless}}{{#if props.classes}} {{props.classes}}{{/if}}">
+	{{{yield}}}
 </div>
 ```
 
 #### Grid Column
 
 ``` hbs
-<div class="u-grid-col\{{#if options.classes}} \{{options.classes}}\{{/if}}">
-\{{{yield}}}
+<div class="u-grid-col{{#if props.colClasses}} {{props.colClasses}}{{/if}}">
+	{{{yield}}}
 </div>
 ```

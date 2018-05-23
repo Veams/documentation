@@ -7,8 +7,7 @@ These `data` styles are shared for all modifiers in the file.
 ### Example Snippet
 
 ``` html
-<article class="c-article--default" data-css="c-article">
-</article>
+<article class="c-article--default" data-css="c-article"></article>
 ```
 
 ### What is the advantage to use global styles with data-attributes? 
