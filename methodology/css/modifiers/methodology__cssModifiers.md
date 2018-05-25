@@ -7,7 +7,7 @@ This rule should be declared with `.is-` or `.isnt-` and is only changing a smal
 ### Example Snippet
 
 The following example shows you the usage of a modifier (`.is-active`) on a navigation element: 
-
+               
 ``` html
 <article class="c-article--default is-bg-higlight-1" data-css="c-article">
 	<header class="article__header is-header">
@@ -23,6 +23,10 @@ The following example shows you the usage of a modifier (`.is-active`) on a navi
 		<a class="article__footer-link" href="#">Footer Link in Article</a>
 	</footer>
 </article>
+<<<<<<< HEAD
 ```
 
 
+=======
+```
+>>>>>>> 491cca298069898f60642440a73e634455ed9557
