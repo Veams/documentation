@@ -23,10 +23,4 @@ The following example shows you the usage of a modifier (`.is-active`) on a navi
 		<a class="article__footer-link" href="#">Footer Link in Article</a>
 	</footer>
 </article>
-<<<<<<< HEAD
 ```
-
-
-=======
-```
->>>>>>> 491cca298069898f60642440a73e634455ed9557
