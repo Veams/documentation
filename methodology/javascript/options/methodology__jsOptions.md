@@ -1,24 +1,31 @@
-### What is the responsibility of Options?
+# Options
 
-With Options we have a mechanism to add alternatives to your Module. An Option has the following responsibility:
+## Options are a module's settings (e.g. animaton length, visibility). 
+---
 
- 1. Overriding standard options which are defined in our Module
- 2. Providing a valid JSON format
+### OPTIONS RESPONSIBILITIES 
+Options have two responsibilities:
+1. Overriding options that we define in the module's constructor
+Providing us a valid JSON format  **Question: What does this mean and why does it matter?**
 
-### How do we distinguish Options?
+---
 
-When we use Options, we add a `data-js-option` attribute to our markup. The declaration helps other developers to identify an override.
+### IDENTIFYING OPTIONS
 
-#### Example Snippet
-
-``` hbs
-<header class="header" data-js-module="sticky" data-js-options='{"myKey": "myValue"}'></header>
+ When a module has options, we add a data-js-option to markup. Including data-js-option in our markup helps developers see option overrides. 
+ 
+```html
+ <header class="header" data-js-module="sticky" data-js-options='{"myKey": "myValue"}'></header>
+ 
+ header.hbs 
 ```
 
-### Syntax
+---
+ 
+### OPTIONS SYNTAX
+We use a single quotation mark to wrap our JSON string (see the example code snippet above).
 
-In the example above you can see, that we use a single quotation mark to wrap our JSON string.
+---
 
-### What is the advantage?
-
-By using Options in markup you can provide a possibility to control Options of a Module in your backend environment.
+### WHAT IS THE ADVANTAGE OF USING OPTIONS?
+Options in our markup allows us to control our module's options via our backend environment.

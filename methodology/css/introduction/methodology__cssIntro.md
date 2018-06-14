@@ -1,8 +1,15 @@
-### General 
+# CSS: Introduction
 
-In Veams-Methodology every `HTML` element gets a class (that is not always possible but we can try it). 
+## The is section outlines how to write CSS classes for clarity, maintainability, scalability. 
 
-Veams is partially using `BEM`. That is why our class systematic looks like this: 
+### Veams uses BEM-style class naming with Regions, Components, and Utilities.
+---
+
+#### General Principles
+
+- Every `HTML` element get a class. You should write your class names using the `BEM` style class naming convention. 
+
+- If implemented correctly, your classes should have a structure similar to the example snippet below.
 
 #### Example Snippet
 
@@ -23,11 +30,46 @@ Veams is partially using `BEM`. That is why our class systematic looks like this
 </article>
 ``` 
 
-The parent element is `c-article--default`. In general the classes of the child elements consists of the instruments name without any prefix and two `__`.
+In the example above, note that the parent element has a the class`c-article--default`. The prefix `c` indicates that
+the element is a component. 
 
-#### Do not 
+All parent elements are prefixed with a letter the tells developer what the element is. Veams has three 
+prefixes:
 
-Veams-Methodology does not use the following of `BEM`: 
+- Regions are prefixed with the letter `"R"`. 
+
+- Components are prefixed with the letter `"C"`. 
+
+- Utilities are prefixed with the letter `"U"`
+
+> For Utilities prefixes are optional, because many frameworks already provides helper classes.
+
+In line with BEM's class naming convention child elements in Veams projects should have two parts, the region, 
+component, or utilities name followed by two underscores `__` and brief description of what the element is. For 
+example: 
+
+`article__header`
+
+`overlay__close-button`
+
+`teaser__icon`
+
+`teaser__icon-text`
+
+
+#### Despite using BEM style class names, Veams class naming has a few notable difference to BEM.
+
+Your class names should only be one level deep (i.e. only have one underscore-separated section). There are two reason 
+for this:
+
+1. For improved readability, you should avoid very long class names.
+2. For most web applications a single level of depth is sufficient to target a parent instrument and it's child 
+elements.
+
+Therefore, when using Veams, you should not have class names that have more than one underscore-separated section. 
+For example:  
+
+**Do Not**
 
 ``` html
 <article class="c-article" data-css="c-article">
@@ -39,22 +81,20 @@ Veams-Methodology does not use the following of `BEM`:
 </article>
 ``` 
 
-**In Veams-Methodology we go only one level deep, because:** 
+**Do**
 
-1. We try to avoid super long class names.
-2. For real web applications this is more than enough to handle classes in one instrument.
+``` html
+<article class="c-article" data-css="c-article">
+	<header class="article__header">
+		<h1 class="article__header-h1">The PG methodology is designed to be used in large, long lived websites and 
+		projects.</h1>
+		<h2 class="article__header-h2">This is how we make our Sass structure scalable.</h2>
+	</header>
+	<div class="article__content"></div>
+</article>
+``` 
 
-### Instruments And Prefixing
-
-The class systematic of Veams determines that we have to prefix our instruments (Regions, Components, Utilities). As a result these instruments are very easy to recognize:
-
-1. Regions (`.r-`)
-2. Components (`.c-`)
-3. Utilities (`.u-`)
-
-> For Utilities prefixes are optional, because many frameworks already provides helper classes. 
-
-### File and Folder Structure
+### File and Folder Structure (Can we generate this tree in  Bash?)
 
 As a result we get a folders structure which is following the: 
 

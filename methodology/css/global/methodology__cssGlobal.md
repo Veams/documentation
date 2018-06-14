@@ -1,8 +1,17 @@
-### General
+# CSS: Global Styles
 
-When we have global styles for our instrument, we use a `data-css` attribute. 
+## Global styles refer to Veams instrument's shared styles.
 
-These `data` styles are shared for all modifiers in the file.
+### Veams instruments share styles via the `data-css` attribute. 
+---
+
+#### General Principles
+
+- Global styles are shared by all of your instrument's contexts.
+
+- If your instrument needs global styles, use the `data-css` attribute in your markup. 
+
+- Your global styles should live in the `data-css` rule in your instrument's style sheet.
 
 ### Example Snippet
 
@@ -10,6 +19,52 @@ These `data` styles are shared for all modifiers in the file.
 <article class="c-article--default" data-css="c-article"></article>
 ```
 
-### What is the advantage to use global styles with data-attributes? 
+``` scss
+/* ===================================================
+ARTICLE COMPONENT
+=================================================== */
 
-There is no advantage at all, because you can also use `mixins` or `extends`. But it is a declarative way to make your global style visible through your markup.
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+[data-css="c-article"] {
+
+	/*
+	Header
+	----------------------- */
+	.article__header {
+		display: flex;
+	}
+}
+
+
+/* ---------------------------------------------------
+Context: Default 
+--------------------------------------------------- */
+.c-article--default {
+
+	/*
+	Header
+	----------------------- */
+	.article__header {
+		justify-content: center;
+		margin-bottom: 3rem;
+	}
+}
+
+/* ---------------------------------------------------
+Context: Microsite 
+--------------------------------------------------- */
+.c-article--microsite {
+
+	/*
+	Header
+	----------------------- */
+	.article__header {
+		justify-content: flex-start;
+		margin-bottom: 2rem;
+	}
+```
+
+Using global styles does not have a significant advantage over using SCSS `mixins` or `extends`. However, global 
+styles are do make your global styles more clear by declaring themselves in your markup via the `data-css` attribute.
