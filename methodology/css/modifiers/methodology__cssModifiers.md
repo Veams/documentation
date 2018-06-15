@@ -1,13 +1,24 @@
-### General 
+# CSS: Modifiers
 
-A modifier change is a very simple change. This could be a different background color, float direction or font-size. 
+## Modifiers classes are used to make small changes to the appearance of instruments. 
 
-This rule should be declared with `.is-` or `.isnt-` and is only changing a small context.
+### Modifiers are useful when instrument customizations are small enough not to require creating a new context.
+---
 
-### Example Snippet
+#### General Principles
 
 The following example shows you the usage of a modifier (`.is-active`) on a navigation element: 
                
+- A modifier change is a small change. This could be a different background color, float direction or font-size. 
+
+- You should declare modifier rules with `.is-` or `.isnt-`. 
+
+- Modifier changes should only change a small part of it's context.
+
+### Example Modifier Snippet
+
+The following example shows the use of a several modifier classes on an article element: 
+
 ``` html
 <article class="c-article--default is-bg-higlight-1" data-css="c-article">
 	<header class="article__header is-header">
@@ -24,3 +35,8 @@ The following example shows you the usage of a modifier (`.is-active`) on a navi
 	</footer>
 </article>
 ```
+
+The parent element `c-article--default` has the modifier class `is-bg-higlight-1`. The child element `article__content`has
+the modifier class `is-visible`. Finally, the child element `article__footer` has the modifier class `is-margin`.
+ 
+ 
