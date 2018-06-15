@@ -1,8 +1,13 @@
-### General 
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+### What are Regions?
 
 Because images speak louder than words, here is an image to illustrate Regions:
 
 ![alt text](/img/temp/regions.jpg "Regions")
+
+{{!debug this}}
 
 This image makes it clear, that: 
 
@@ -18,46 +23,6 @@ We separate layout styles from our other instruments (`Components` and `Regions`
 
 In example we can just replace our `logo` (`Component`) and replace it with a `language-switcher` (`Component`) without worrying about layout issues.
 
-#### Example Snippet
-
-``` html
-<header class="r-header">
-	<div class="header__inner">
-        <div class="header-left"></div>
-        <div class="header-right"></div>
-	</div>
-</header>
-```
-
-### File and Folder Structure
-
-Every region should be defined in our layout file (in example `lyt-default.hbs` which you can find in your `layouts` directory).
-
-``` bash
-src
-├── app
-│   └── core
-│       ├── layouts
-│       │   └── lyt-default.hbs
-│       └── components
-│           └── header
-```
-
-### Styles and Sass Structure
-
-For each layout we create a Sass file. In this layout Sass file we define our regions.
-
-``` bash
-src
-├── app
-│   └──shared
-│       └── styles
-│           └── layouts
-│               ├── _header.scss
-│               ├── _main.scss
-│               └── _footer.scss
-```
-
 ### Examples of categorized page regions
 
 * Header Region
@@ -67,8 +32,22 @@ src
 * Main Content Region
 * Sidebar Region
 * Footer Region
+            
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-#### lyt-default.hbs
+#### One Region in HTML
+
+``` html
+<header class="r-header">
+    <div class="header__inner">
+        <div class="r-header-left"></div>
+        <div class="r-header-right"></div>
+    </div>
+</header>
+```
+
+#### Handlebars Layout Example
 
 ``` hbs
 <!DOCTYPE html>
@@ -78,33 +57,58 @@ src
 <!--[if gt IE 8]><!-->
 <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-    {{#block "metadata"}}
-        {{> _metadata }}
-    {{/block}}
-    {{#block "styles"}}
-        {{> _styles }}
-    {{/block}}
+    \{{#block "metadata"}}
+        \{{> _metadata }}
+    \{{/block}}
+    \{{#block "styles"}}
+        \{{> _styles }}
+    \{{/block}}
 </head>
-<body class="{{bodyclass}}">
+<body class="\{{bodyclass}}">
 
     <header class="r-header">
-        {{#block "header"}}{{/block}}
+        \{{#block "header"}}\{{/block}}
     </header>
 
     <main class="r-main">
-        {{#block "main"}}{{/block}}
+        \{{#block "main"}}\{{/block}}
     </main>
 
     <footer class="r-footer">
-        {{#block "footer"}}{{/block}}
+        \{{#block "footer"}}\{{/block}}
     </footer>
 
-    {{#block "scripts"}}
-        {{> _scripts }}
-    {{/block}}
+    \{{#block "scripts"}}
+        \{{> _scripts }}
+    \{{/block}}
 
 </body>
 </html>
 ```
+	
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+### File and Folder Structure
+
+Every region should be defined in our layout file (in example `lyt-default.hbs` which you can find in your `layouts` directory).
+
+For each layout we create a Sass file. In this layout Sass file we define our regions.
 
 
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+``` cmd
+src
+└── app
+   └── core
+       └── layouts
+           |── lyt-default.hbs
+           └── lyt-default.scss
+```
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
