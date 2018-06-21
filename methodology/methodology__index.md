@@ -1,53 +1,60 @@
-### Why Another Methodology?
+### What is the Veams Methodology?
 
-> There are many frontend methodologies out there. And I like a few of them. But I don't feel comfortable with them at all. 
+Veams Methodology refers to how Veams projects are structured and built up for modularity, scalability, and 
+maintainability.
 
-**Most methodologies are scoped to `html` and `css`. To be more specific, these methodologies are only handling `class systematics`. But I think that is not enough.**
+Most web development methodologies are only scoped to `HTML` and `CSS`. As a result, they only handle `class 
+systematics`. Veams is scoped to `HTML`, `CSS`, and `JavaScript`.
 
-> So, I decide to go my own way of structuring projects.
+Veams Methodology does not reinvent the wheel. Veams Methodology is based on concepts from BEM, frontend 
+development, backend development and extensive feedback from professional web developers.
 
-I am not reinventing the wheel. I just take out some pieces from BEM, take some parts from my backend experience (mainly Drupal development) and frontend expertise in various projects and get important exchange through the close dialogue with other developers.
+### What differentiates Veams Methodology from other web development methodologies?
 
-### What Is The Difference?
+Veams is a methodology that you can apply across your entire frontend stack.
 
-Veams-Methodology is a system for your whole frontend stack.
+Typical questions which Veams Methodology is answers are:
 
-Typical questions which Veams-Methodology is solving:
-
-1. How to scope and differentiate (Components and Regions) in your `HTML`?
-2. How to bind JavaScript to your DOM elements?
-3. How to structure layouts?
-4. How to write your classes?
-5. How to extend your project?
+1. How should you scope and differentiate your`HTML`?
+2. How should you bind `JavaScript` to your DOM elements?
+3. How should you structure your layouts?
+4. How should you write your `CSS` classes?
+5. How should you expand your project?
 
 ### General Overview
 
-#### Instruments To Cluster Your Markup
+#### Instruments To Structure Your Markup
 
-Veams-Methodology uses specific instruments to structure your web application. In general it splits up your project in four main instruments. These are:
+Markup in Veams applications is structured using "instruments". In the context of Veams instruments are tools that 
+you will use to structure the pieces of your application into one of three categories:
 
-* Regions (layouts)
-* Component
-* Utilities
+* [Regions](http://localhost:3000/docs/methodology/instruments/regions/index.html)
+* [Components](http://localhost:3000/docs/methodology/instruments/components/index.html)
+* [Utilities](http://localhost:3000/docs/methodology/instruments/utilities/index.html)
 
-> Every instrument has specific attributes.
+> Every instrument has a specific purpose and unique attributes. Click the links above to learn more about each 
+instrument.
 
-#### JavaScript Handling
+#### CSS class writing system
 
-To bind our JavaScript to our DOM elements the Veams-Methodology does not use classes. It uses `data-` attributes which are graduated in:
-
-- Module initialisation (`data-js-module`)
-- Options handling (`data-js-options`)
-- Event handling (`data-js-atom`)
-
-> Of course it makes no sense to use this part of the methodology when your application involves a framework which is already using declarative bindings.
-
-#### Class Systematics
-
-In short Veams-Methodology integrates the following:
+In general, Veams class naming includes the following:
 
 1. BEM similarities to scope styles
 2. Prefix usage to differentiate between instruments
 3. Global Styles for instruments
 4. Modifier and context styles
 5. Layout styles with Regions to separate concerns
+
+Despite that Veam's class naming convention is based on BEM -- Veams does not use BEM. Veams uses BEM with restrictions 
+how deep your class names should be. To learn more about how Veams flavor of BEM visit the [CSS Introduction](http://localhost:3000/docs/methodology/css/index.html)
+Introduction section.
+
+#### JavaScript module initialization, module options, and event handling
+
+Veams Methodology uses `data-` attributes to bind JavaScript to DOM elements. It does not use classes to bind JavaScript to DOM elements the. Javascript is bound to DOM elements for three purposes:
+
+* [Module initialisation (`data-js-module`)](http://localhost:3000/docs/javascript/methodology.html)
+* [Options handling (`data-js-options`)](http://localhost:3000/docs/javascript/options.html)
+* [Event handling (`data-js-atom`)](http://localhost:3000/docs/javascript/items.html)
+
+

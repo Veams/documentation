@@ -3,21 +3,21 @@
 
 ### What are Regions?
 
-Because images speak louder than words, here is an image to illustrate Regions:
-
-![alt text](/img/temp/regions.jpg "Regions")
-
-{{!debug this}}
-
-This image makes it clear, that: 
+Regions are non-reusable sections of HTML that are used to structure your web pages. More specifically:
 
 1. Regions are not reusable. 
 2. Regions are only defined in your layout files.
 3. Regions subdivide your layout.
 
-> This image is actually borrowed from Drupal.org.
+Of the three instruments that Veams uses, regions are the highest-level instrument. Regions contain components.   
 
-### Why do we use Regions?
+The diagram below illustrates how regions are used to section a page and contain components:
+
+![alt text](/img/temp/regions.jpg "Regions")
+
+> This image is borrowed from Drupal.org.
+
+### Why use Regions?
 
 We separate layout styles from our other instruments (`Components` and `Regions`). The main benefit is drop-in replacement.
 

@@ -1,17 +1,19 @@
 # CSS: Introduction
 
-## The is section outlines how to write CSS classes for clarity, maintainability, scalability. 
+## The section outlines how to Veams to write CSS classes for clarity, maintainability, scalability. 
 
-### Veams uses BEM-style class naming with Regions, Components, and Utilities.
+### Veams uses BEM-style class naming with Regions, Components, and Utilities. 
+
+### Despite using BEM style class names, Veams class naming have a few notable differences to BEM.
 ---
 
-#### General Principles
+#### General principles
 
 - Every `HTML` element get a class. You should write your class names using the `BEM` style class naming convention. 
 
 - If implemented correctly, your classes should have a structure similar to the example snippet below.
 
-#### Example Snippet
+#### Example snippet
 
 ``` html
 <article class="c-article--default is-bg-higlight-1" data-css="c-article">
@@ -57,7 +59,7 @@ example:
 `teaser__icon-text`
 
 
-#### Despite using BEM style class names, Veams class naming has a few notable difference to BEM.
+#### How Veams class naming is different when compared to BEM.
 
 Your class names should only be one level deep (i.e. only have one underscore-separated section). There are two reason 
 for this:
@@ -93,29 +95,3 @@ For example:
 	<div class="article__content"></div>
 </article>
 ``` 
-
-### File and Folder Structure (Can we generate this tree in  Bash?)
-
-As a result we get a folders structure which is following the: 
-
-**Sass**
-
-``` bash
-├── app.scss
-├── core
-│   └── styles
-│       └── base.scss
-└── shared
-    ├── components
-    │   └── article
-    │       └── styles
-    │           └── _article.scss
-    ├── styles
-    │   └── layouts
-    │       └── _header.scss
-    ├── utilities
-    │   └── grids
-    │       └── styles
-    │           └── _grid.scss
-``` 
-
