@@ -1,8 +1,17 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 # What is Veams?
 
 __Veams is one of the most flexible and efficient system to build scalable Web Apps, HTML5 web interfaces and Prototypes. It is extremely extensible and efficiently architected.__
 
 Veams contains various (pluggable) instruments which are controlled by our custom command line interface.
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
 ## Veams Toolkit
 
@@ -13,11 +22,22 @@ Veams contains various (pluggable) instruments which are controlled by our custo
 1. You have a frontend methodology on hand.
 1. You can install configurable `VEAMS` components with a documentation out of the box.
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 ### Our CLI (@veams/cli)
 
 The CLI is a command line interface for scaffolds and build processes.
 The key benefit is the rapid setup time. You can easily create complex application setups with @veams/cli in a few minutes.
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
 ## Framework
 
@@ -26,6 +46,12 @@ Veams exposes a framework (`@veams/core`) which you can use as a simple starting
 The purpose of Veams is to individually build up a __project based framework__ in a simple, fast, scalable and understandable way.
 
 It is not opinionated, means use the stack which fits best to your project, for example Backbone, React, Foundation or something else.
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
 ### Methodology
 
@@ -37,6 +63,12 @@ Veams-Methodology is a system for your whole frontend stack. Typical questions -
 4. How to write your classes?
 5. How to extend your project?
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 ### Components
 
 Veams provides a building blocks library to speed up templating in projects.
@@ -44,3 +76,6 @@ Veams provides a building blocks library to speed up templating in projects.
 All components can be found here: https://github.com/Veams
 
 **Do you want to see the components in action? Here you go: https://examples.veams.org/**
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})

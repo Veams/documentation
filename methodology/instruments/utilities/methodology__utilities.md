@@ -1,3 +1,6 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
 ### General
 
 On most applications we have markup which has no relationship to its content but is important to display the inner HTML in a structured way. Nice examples are grid helper classes like Foundation or Boostrap provides. 
@@ -15,6 +18,9 @@ Examples are:
 
 We use Utilities to simplify the differentiation between `Components` and helper markup.
 
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
 #### Example Snippet
 
 ``` html
@@ -28,14 +34,58 @@ We use Utilities to simplify the differentiation between `Components` and helper
 </div>
 ```
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+
 ### Examples of utlilities: 
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 * Grid System
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+*Grid row text
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+#### Grid Row
+
+``` hbs
+<div class="u-grid-row{{#unless props.padding}} is-collapsed{{/unless}}{{#if props.classes}} {{props.classes}}{{/if}}">
+	{{{yield}}}
+</div>
+```
+
+#### Grid Column
+
+``` hbs
+<div class="u-grid-col{{#if props.colClasses}} {{props.colClasses}}{{/if}}">
+	{{{yield}}}
+</div>
+```
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 ### File and Folder Structure
 
-When you use a Template Engine, it is important to create a folder for your utilities. 
+When you use a Template Engine, it is important to create a folder for your utilities.
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 Our utilities folder structure can look like this: 
 
@@ -57,18 +107,5 @@ src
 │               └── README.md
 ```
 
-#### Grid Row
-
-``` hbs
-<div class="u-grid-row{{#unless props.padding}} is-collapsed{{/unless}}{{#if props.classes}} {{props.classes}}{{/if}}">
-	{{{yield}}}
-</div>
-```
-
-#### Grid Column
-
-``` hbs
-<div class="u-grid-col{{#if props.colClasses}} {{props.colClasses}}{{/if}}">
-	{{{yield}}}
-</div>
-```
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
