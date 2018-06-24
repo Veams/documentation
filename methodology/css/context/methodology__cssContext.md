@@ -1,9 +1,18 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 # CSS: Contexts
 
 ## Instead of duplicating components with different styles, you should create a new `context`. Contexts are variations of components that share a base set of styles and have their own context-specific styles.
 
 ### Contexts make your components more modular and reusable. 
----
+
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
 
 #### General Principles
 
@@ -18,6 +27,9 @@ of the instrument.
 independent styles that allow the component to be reused in different contexts.
 
 - Contexts also make it easy to determine which context is rendered by inspecting a page's markup.
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 ### Example "default" context markup 
 
@@ -66,13 +78,13 @@ independent styles that allow the component to be reused in different contexts.
 ARTICLE COMPONENT
 =================================================== */
 
-/* ---------------------------------------------------
+/* 
 Global Styles
---------------------------------------------------- */
+ */
 [data-css="c-article"] {
 	/*
 	Header
-	----------------------- */
+	-- */
 	.article__header {
 	}
 
@@ -90,13 +102,13 @@ Global Styles
 
 	/*
 	Content
-	----------------------- */
+	-- */
 	.article__content {
 	}
 
 	/*
 	Footer
-	----------------------- */
+	-- */
 	.article__footer {
 	}
 
@@ -105,13 +117,13 @@ Global Styles
 }
 
 
-/* ---------------------------------------------------
+/* 
 Context: Default 
---------------------------------------------------- */
+ */
 .c-article--default {
 	/*
 	Header
-	----------------------- */
+	-- */
 	.article__header {
 		margin-bottom: 3rem;
 	}
@@ -140,13 +152,13 @@ Context: Default
 	}
 }
 
-/* ---------------------------------------------------
+/* 
 Context: Microsite 
---------------------------------------------------- */
+ */
 .c-article--microsite {
 	/*
 	Header
-	----------------------- */
+	-- */
 	.article__header {
 		margin-bottom: 2rem;
 	}
@@ -175,3 +187,5 @@ Context: Microsite
 	}
 }
 ```
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})

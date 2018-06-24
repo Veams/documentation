@@ -1,9 +1,17 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 # CSS: Modifiers
 
 ## Modifiers classes are used to make small changes to the appearance of instruments. 
 
 ### Modifiers are useful when instrument customizations are small enough not to require creating a new context.
----
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 #### General Principles
 
@@ -14,6 +22,9 @@ The following example shows you the usage of a modifier (`.is-active`) on a navi
 - You should declare modifier rules with `.is-` or `.isnt-`. 
 
 - Modifier changes should only change a small part of it's context.
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 ### Example Modifier Snippet
 
@@ -39,4 +50,5 @@ The following example shows the use of a several modifier classes on an article 
 The parent element `c-article--default` has the modifier class `is-bg-higlight-1`. The child element `article__content`has
 the modifier class `is-visible`. Finally, the child element `article__footer` has the modifier class `is-margin`.
  
- 
+ [//]: #     ({{/wrapWith}})
+ [//]: # ({{/wrapWith}})

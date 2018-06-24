@@ -1,3 +1,6 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 ### What is the Veams Methodology?
 
 Veams Methodology refers to how Veams projects are structured and built up for modularity, scalability, and 
@@ -9,7 +12,13 @@ systematics`. Veams is scoped to `HTML`, `CSS`, and `JavaScript`.
 Veams Methodology does not reinvent the wheel. Veams Methodology is based on concepts from BEM, frontend 
 development, backend development and extensive feedback from professional web developers.
 
-### What differentiates Veams Methodology from other web development methodologies?
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
+### What differentiates Veams's Methodology from other web development methodologies?
 
 Veams is a methodology that you can apply across your entire frontend stack.
 
@@ -20,6 +29,12 @@ Typical questions which Veams Methodology is answers are:
 3. How should you structure your layouts?
 4. How should you write your `CSS` classes?
 5. How should you expand your project?
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
 ### General Overview
 
@@ -35,6 +50,12 @@ you will use to structure the pieces of your application into one of three categ
 > Every instrument has a specific purpose and unique attributes. Click the links above to learn more about each 
 instrument.
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 #### CSS class writing system
 
 In general, Veams class naming includes the following:
@@ -49,6 +70,12 @@ Despite that Veam's class naming convention is based on BEM -- Veams does not us
 how deep your class names should be. To learn more about how Veams flavor of BEM visit the [CSS Introduction](http://localhost:3000/docs/methodology/css/index.html)
 Introduction section.
 
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 #### JavaScript module initialization, module options, and event handling
 
 Veams Methodology uses `data-` attributes to bind JavaScript to DOM elements. It does not use classes to bind JavaScript to DOM elements the. Javascript is bound to DOM elements for three purposes:
@@ -57,4 +84,5 @@ Veams Methodology uses `data-` attributes to bind JavaScript to DOM elements. It
 * [Options handling (`data-js-options`)](http://localhost:3000/docs/javascript/options.html)
 * [Event handling (`data-js-atom`)](http://localhost:3000/docs/javascript/items.html)
 
-
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})

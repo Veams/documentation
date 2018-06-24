@@ -1,3 +1,6 @@
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
 # CSS: Introduction
 
 ## The section outlines how to Veams to write CSS classes for clarity, maintainability, scalability. 
@@ -5,13 +8,46 @@
 ### Veams uses BEM-style class naming with Regions, Components, and Utilities. 
 
 ### Despite using BEM style class names, Veams class naming have a few notable differences to BEM.
----
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 #### General principles
 
 - Every `HTML` element get a class. You should write your class names using the `BEM` style class naming convention. 
 
 - If implemented correctly, your classes should have a structure similar to the example snippet below.
+
+In the example above, note that the parent element has a the class`c-article--default`. The prefix `c` indicates that
+the element is a component. 
+
+All parent elements are prefixed with a letter the tells developer what the element is. Veams has three 
+prefixes:
+
+- Regions are prefixed with the letter `"r"`. 
+
+- Components are prefixed with the letter `"c"`. 
+
+- Utilities are prefixed with the letter `"u"`
+
+> For Utilities prefixes are optional, because many frameworks already provides helper classes.
+
+In line with BEM's class naming convention child elements in Veams projects should have two parts, the region, 
+component, or utilities name followed by two underscores `__` and brief description of what the element is. For 
+example: 
+
+`article__header`
+
+`overlay__close-button`
+
+`teaser__icon`
+
+`teaser__icon-text`
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 #### Example snippet
 
@@ -32,32 +68,10 @@
 </article>
 ``` 
 
-In the example above, note that the parent element has a the class`c-article--default`. The prefix `c` indicates that
-the element is a component. 
-
-All parent elements are prefixed with a letter the tells developer what the element is. Veams has three 
-prefixes:
-
-- Regions are prefixed with the letter `"R"`. 
-
-- Components are prefixed with the letter `"C"`. 
-
-- Utilities are prefixed with the letter `"U"`
-
-> For Utilities prefixes are optional, because many frameworks already provides helper classes.
-
-In line with BEM's class naming convention child elements in Veams projects should have two parts, the region, 
-component, or utilities name followed by two underscores `__` and brief description of what the element is. For 
-example: 
-
-`article__header`
-
-`overlay__close-button`
-
-`teaser__icon`
-
-`teaser__icon-text`
-
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 #### How Veams class naming is different when compared to BEM.
 
@@ -70,6 +84,9 @@ elements.
 
 Therefore, when using Veams, you should not have class names that have more than one underscore-separated section. 
 For example:  
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 **Do Not**
 
@@ -95,3 +112,6 @@ For example:
 	<div class="article__content"></div>
 </article>
 ``` 
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
