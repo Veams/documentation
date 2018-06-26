@@ -3,11 +3,11 @@
 
 ### What are Regions?
 
-Regions are non-reusable sections of HTML that are used to structure your web pages. More specifically:
+Regions are sections of HTML that are used to structure your web pages. More specifically:
 
 1. Regions are not reusable. 
-2. Regions are only defined in your layout files.
-3. Regions subdivide your layout.
+2. Regions are only used in your layout files.
+3. The purpose of regions are to subdivide your layout.
 
 Of the three instruments that Veams uses, regions are the highest-level instrument. Regions contain components.   
 
@@ -19,9 +19,9 @@ The diagram below illustrates how regions are used to section a page and contain
 
 ### Why use Regions?
 
-We separate layout styles from our other instruments (`Components` and `Regions`). The main benefit is drop-in replacement.
+Regions allow you to separate your layout styles from our other instruments styles (`Components` and `Regions`). The main benefit separating styles is drop-in replacement.
 
-In example we can just replace our `logo` (`Component`) and replace it with a `language-switcher` (`Component`) without worrying about layout issues.
+In the example code note that, as a result of separating layout styles from component styles, you can swap the `logo` component with the `language-switcher` component and you don't have to worry about layout issues.
 
 ### Examples of categorized page regions
 
@@ -93,9 +93,9 @@ In example we can just replace our `logo` (`Component`) and replace it with a `l
 
 ### File and Folder Structure
 
-Every region should be defined in our layout file (in example `lyt-default.hbs` which you can find in your `layouts` directory).
+Every region should be defined in our layout file (in example `lyt-default.hbs`. You can find your layout files in your `layouts` directory).
 
-For each layout we create a Sass file. In this layout Sass file we define our regions.
+For each layout you should create a Sass file. In this layout Sass file you will define your regions.
 
 
 [//]: #     ({{/wrapWith}})

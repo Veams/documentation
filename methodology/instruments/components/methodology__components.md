@@ -3,16 +3,20 @@
 
 ### General
 
-Components are reusable HTML snippets. That means, one page can display multiple identical Components with different data. 
+Components are reusable HTML snippets. One page can display multiple identical Components with different data.
 
-1. Components always closely related to content.
-2. Components content is a variable and can change on different contexts/pages.
-3. Components generic and can be used all over your project.
-4. Components can contain Components.
+1. Components are always closely related to content.
+2. Component's content are variables and can change in different contexts.
+3. Components are generic and can be used all over your project.
+4. Components can contain other components.
 
-### Why do we use Components?
+### Why you should we use components?
 
-Because of reusability. With reusability you can build building block libraries (we had, see [Veams-Components](/veams-components/index.html)).
+The main reason to use components is reusability. Reusability allows you drop components into your pages and not only will they just work, they will look they way were designed, too.
+
+Veams has a library of components. You can install them and snap them together like legos to quickly build pages.
+
+To learn more about Veam's component library, see [Veams-Components](/veams-components/index.html)).
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -74,7 +78,7 @@ Because of reusability. With reusability you can build building block libraries 
 
 ### File and Folder Structure
 
-When you use a Templating Engine, it is important to create a folder for your components. Each component gets its own folder.
+When you use components, it's important organize them properly. Veams components live in the "components" directory. Within the "components" directory, each component gets its own folder where it's markup, stylesheets, and script files live.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -100,7 +104,7 @@ Example of Component folder structure:
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-To structure sub elements of a Component for example `<header>` in an `<article>`, we create a new partial and define the name (like BEM: `article__header.hbs`).
+You can subdivide components using "partials." To structure sub elements of a component and define it. For example, to put a header `<header>` in an `<article>`, the naming using Veam's BEM-style naming convention could be `article__header.hbs`.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
