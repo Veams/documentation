@@ -3,7 +3,7 @@
 
 ### General
 
-Components are reusable HTML snippets. One page can display multiple identical Components with different data.
+Components are reusable HTML snippets. One page can display multiple identical components with different data.
 
 1. Components are always closely related to content.
 2. Component's content are variables and can change in different contexts.
@@ -12,7 +12,7 @@ Components are reusable HTML snippets. One page can display multiple identical C
 
 ### Why you should we use components?
 
-The main reason to use components is reusability. Reusability allows you drop components into your pages and not only will they just work, they will look they way were designed, too.
+The main reason to use components is reusability. Reusability allows you to drop components into your pages and not only will they just work, they will look they way were designed to look.
 
 Veams has a library of components. You can install them and snap them together like legos to quickly build pages.
 
@@ -78,7 +78,7 @@ To learn more about Veam's component library, see [Veams-Components](/veams-comp
 
 ### File and Folder Structure
 
-When you use components, it's important organize them properly. Veams components live in the "components" directory. Within the "components" directory, each component gets its own folder where it's markup, stylesheets, and script files live.
+When you use components, it's important to organize them properly. Veams components live in the "components" directory. Within the "components" directory, each component gets its own folder where its markup, stylesheets, and script files live.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -87,16 +87,16 @@ Example of Component folder structure:
 
 ``` bash
 ├── components
-    └── article
-        ├── data
-        │   └── article.hjson
-        ├── styles
-        │   └── _article.scss
-        ├── templates
-        │   ├── article-usage.hbs
-        │   ├── article.hbs
-        │   ├── article__header.hbs
-        │   └── article__footer.hbs
+    └── article
+        ├── data
+        │   └── article.hjson
+        ├── styles
+        │   └── _article.scss
+        ├── templates
+        │   ├── article-usage.hbs
+        │   ├── article.hbs
+        │   ├── article__header.hbs
+        │   └── article__footer.hbs
         ├── article-usage.settings.hjson
         └── README.md
 ```
@@ -104,7 +104,7 @@ Example of Component folder structure:
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-You can subdivide components using "partials." To structure sub elements of a component and define it. For example, to put a header `<header>` in an `<article>`, the naming using Veam's BEM-style naming convention could be `article__header.hbs`.
+You can subdivide components using "partials." To structure the partials of a component you first need to define them. For component defintion Veams uses a BEM-style syntax. For example, to put a `<header>` in an `<article>`, the naming using Veam's BEM-style naming convention could be `article__header.hbs`.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})

@@ -3,12 +3,12 @@
 
 # Options
 
-## Options are a module's settings (e.g. animaton length, visibility). 
+## Options are a module's settings (e.g. animation length, visibility, etc).
 
 ### OPTIONS RESPONSIBILITIES 
 Options have two responsibilities:
-1. Overriding options that we define in the module's constructor
-Providing us a valid JSON format  **Question: What does this mean and why does it matter?**
+1. You can use options in your markup to override options that you defined in your module's constructor
+1. Options provide you a with a valid JSON format (passing data?)  **Question: What does this mean and why does it matter?**
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
@@ -17,7 +17,7 @@ Providing us a valid JSON format  **Question: What does this mean and why does i
 
 ### IDENTIFYING OPTIONS
 
- When a module has options, we add a data-js-option to markup. Including data-js-option in our markup helps developers see option overrides. 
+ When a module has options, you must at add a data-js-options attribute to your markup. Including data-js-options in our markup helps developers see which constructor options were overrides.
  
  [//]: #     ({{/wrapWith}})
  [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -35,10 +35,10 @@ Providing us a valid JSON format  **Question: What does this mean and why does i
  [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
  
 ### OPTIONS SYNTAX
-We use a single quotation mark to wrap our JSON string (see the example code snippet above).
+You should use a single quotation marks to wrap your JSON strings.
 
 ### WHAT IS THE ADVANTAGE OF USING OPTIONS?
-Options in our markup allows us to control our module's options via our backend environment.
+Options in your markup allows you to control your module's options via your backend environment.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

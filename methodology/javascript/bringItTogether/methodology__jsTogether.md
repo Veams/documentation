@@ -1,7 +1,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-# JavaScript Best Practices: Bringing It All Together
+# Bringing It All Together
 
 ## Altogether, modules, options, and items form a complete system for managing JavaScript functionality.
 
@@ -11,7 +11,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-###  To the right, you can see what markup looks like when modules, options, and items are used altogether:
+###  To the right, you can see what markup looks like when modules, options, and items are used altogether. In this example we markup a basic navigation.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -45,7 +45,7 @@
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-As mentioned earlier, one of the main advantages of Veams is how easily other developers can identify important information about a component simply by looking at the markup.
+As previously mentioned, one of the main advantages of Veams is how easily developers can identify important information about components by looking at markup. Below we deconstruct the code block above to demonstrate how you can get information about a component's JavaScript functionality by reviewing it's markup.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
@@ -55,7 +55,9 @@ As mentioned earlier, one of the main advantages of Veams is how easily other de
 
 ### Modules 
 
-Look at the first line in the example snippet ***(should be figure)*** above for a basic navigation:
+The line of code to the right is first line of code from the code block above.
+
+This line of code has a ```data-js-module```  attribute with the value ```navigation```. Based on this information you know that the navigation has JavaScript functionality that is defined in a module named ```navigation```.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -63,8 +65,6 @@ Look at the first line in the example snippet ***(should be figure)*** above for
 ```html
 <div class="b-navigation" data-js-module="navigation" data-js-options='{"openOnInit": true}'>
 ```
-
-This line of code has a ```data-js-module```  attribute with the value ```navigation```. Therefore, we know that our navigation has JavaScript functionality that is contained in it's own module also named ```navigation```. 
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
@@ -74,7 +74,9 @@ This line of code has a ```data-js-module```  attribute with the value ```naviga
 
 ### Options
 
-Again look at line one from the complete snippet ***(should be figure)*** above.
+To the right again there is the first line from the whole snippet above.
+
+Beside a ```data-js-module``` attribute, the line also has a ```data-js-options``` attribute with the value ```{"openOnInit": true}```. So, on top of knowing that ```navigation``` is module, you can also infer that this module has an option, you know it's name, it's value, and you know that you can override it's value via your backend environment.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -82,8 +84,6 @@ Again look at line one from the complete snippet ***(should be figure)*** above.
 ```html
 <div class="b-navigation" data-js-module="navigation" data-js-options='{"openOnInit": true}'>
 ```
-
-Beside a ```data-js-module``` attribute, line one also has a ```data-js-options``` attribute with the value ```{"openOnInit": true}```. So, on top of knowing that ```navigation``` is module, we also immediately know that this module has an option, we know it's value, and we know that we can override it's value via our frontend, or our backend, environment. 
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
@@ -93,9 +93,9 @@ Beside a ```data-js-module``` attribute, line one also has a ```data-js-options`
 
 ### Items 
 
-In the large snippet above there are six elements with a ```data-js-item``` attribute
+It's not uncommon for complicated components to have multiple `data-js-item` attributes. For example, the navigation snippet above has six elements with a ```data-js-item``` attributes:
 
-First, our navigation anchors have ```data-js-item```  attributes both with the value ```nav-anchor.```
+First, the navigation anchors have ```data-js-item```  attributes both with the value ```nav-anchor.```
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -110,7 +110,7 @@ First, our navigation anchors have ```data-js-item```  attributes both with the 
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-Second, our ```nav```  element has a  ```data-js-item``` attribute with the value ```"nav-container```.
+Second, the ```nav```  element has a  ```data-js-item``` attribute with the value ```"nav-container```.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -124,7 +124,7 @@ Second, our ```nav```  element has a  ```data-js-item``` attribute with the valu
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-Third, our ```li```  elements have ```data-js-item``` attributes both with the value ```nav-panel```. 
+Third, the ```li```  elements have ```data-js-item``` attributes both with the value ```nav-panel```.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -157,7 +157,7 @@ Finally the navigation's close button is a ```data-js-item``` attribute with the
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-By simply reviewing our markup for ```data-js-items``` we can easily identify which elements have JavaScript functionality. 
+The main point to remember about ```data-js-items``` is you use them identify bind JavaScript functionality to elements and you can use them identify which elements in Veams projects have JavaScript functionality.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

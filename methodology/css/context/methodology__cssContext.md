@@ -3,7 +3,7 @@
 
 # CSS: Contexts
 
-## Instead of duplicating components with different styles, you should create a new `context`. Contexts are variations of components that share a base set of styles and have their own context-specific styles.
+## Instead of duplicating components with different styles, you should create new `contexts`. `Contexts` are variations of components that share a base set of styles and have their own context-specific styles.
 
 ### Contexts make your components more modular and reusable. 
 
