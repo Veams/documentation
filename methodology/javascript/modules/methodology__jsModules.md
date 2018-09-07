@@ -27,10 +27,10 @@ In Veams projects you bind modules to your markup via the ****data-js-module****
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
+### EXAMPLE SNIPPET
+
 ```html
 <header class="header" data-js-module="sticky"></header>
-
-header.hbs 
 ```
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

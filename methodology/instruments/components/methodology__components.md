@@ -55,6 +55,21 @@ You should prefix your components with c- (or _c- for Sass files).
 #### Figure Component
 
 ```hbs
+<figure \{{#if figureId}}id="\{{figureId}}" \{{/if}}class="c-figure\{{#if figureContextClass}}--\{figureContextClass}}\{{/if}}\{{#if figureClasses}} \{{figureClasses}}\{{/if}}" data-css="c-figure">
+    <div class="figure__wrapper">
+        \{{#if pictureUrlStd}}
+            \{{> c-picture}}
+        \{{else}}\{{#if video}}
+            \{{> c-video}}
+        \{{/if}}\{{/if}}
+    </div>
+    \{{#if figureCaption}}
+        <figcaption class="figure__caption\{{#if figureCaptionClasses}} \{{figureCaptionClasses}}\{{/if}}">
+            \{{> c-figure__caption figureCaption}}
+        </figcaption>
+    \{{/if}}
+</figure>
+
 
 ```
 

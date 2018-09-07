@@ -99,16 +99,4 @@ For each layout you should create a Sass file. In this layout Sass file you will
 
 
 [//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-``` cmd
-src
-└── app
-   └── core
-       └── layouts
-           |── lyt-default.hbs
-           └── lyt-default.scss
-```
-
-[//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

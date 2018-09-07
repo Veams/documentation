@@ -28,7 +28,7 @@ The the example to the right shows the usage of a modifier (`.is-active`) on a n
 
 ### Example Modifier Snippet
 
-The following example shows the use of a modifier class ("is-active") on a nav element:
+Example modifier class ("is-active") on a navigation element:
 
 ``` html
 <nav class="b-navbar" id="site-menu">

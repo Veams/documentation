@@ -71,7 +71,7 @@ Utilities simplify the differentiation between `Components` and helper markup.
 #### Grid Column
 
 ``` hbs
-<div class="u-grid-col{{#if props.colClasses}} {{props.colClasses}}{{/if}}">
+<div class="u-grid-col\{{#if props.colClasses}} \{{props.colClasses}}\{{/if}}">
 	{{{yield}}}
 </div>
 ```

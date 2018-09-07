@@ -22,10 +22,10 @@ When you use items, you add a `data-js-item` attribute to your markup.
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
+### EXAMPLE SNIPPET
+
 ```html
 <a href="#id4" class="c-cta" data-js-atom="toggle-close"></a>
-
-cta.hbs
 ```
 
 [//]: #     ({{/wrapWith}})

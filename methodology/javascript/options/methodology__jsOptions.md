@@ -23,11 +23,11 @@ Options have two responsibilities:
  
  [//]: #     ({{/wrapWith}})
  [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
- 
+
+ ### EXAMPLE SNIPPET
+
 ```html
  <header class="header" data-js-module="sticky" data-js-options='{"myKey": "myValue"}'></header>
- 
- header.hbs 
 ```
 
 [//]: #     ({{/wrapWith}})
