@@ -1,15 +1,15 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### What are Regions?
+# Regions
 
 Regions are sections of HTML that are used to structure your web pages. More specifically:
 
 1. Regions are not reusable. 
 2. Regions are only used in your layout files.
-3. The purpose of regions are to subdivide your layout.
+3. The purpose of regions are to segment your layout.
 
-Of the three instruments that Veams uses, regions are the highest-level instrument. Regions contain components.   
+Of the three instruments that Veams uses, regions are the highest-level instrument. Regions contain components.
 
 The diagram below illustrates how regions are used to section a page and contain components:
 
@@ -19,11 +19,11 @@ The diagram below illustrates how regions are used to section a page and contain
 
 ### Why use Regions?
 
-Regions allow you to separate your layout styles from our other instruments styles (`Components` and `Regions`). The main benefit separating styles is drop-in replacement.
+Regions allow you to separate your layout styles from other instrument's styles (`Components` and `Regions`). The main benefit of separating styles is drop-in replacement.
 
-In the example code note that, as a result of separating layout styles from component styles, you can swap the `logo` component with the `language-switcher` component and you don't have to worry about layout issues.
+For example, in the sample code, by separating layout styles from component styles, you can swap the `logo` component with the `language-switcher` component and you don't have to worry about breaking your layout.
 
-### Examples of categorized page regions
+### Examples of page regions are:
 
 * Header Region
 * Logo Region in Header
@@ -104,10 +104,10 @@ For each layout you should create a Sass file. In this layout Sass file you will
 ``` cmd
 src
 └── app
-   └── core
-       └── layouts
-           |── lyt-default.hbs
-           └── lyt-default.scss
+   └── core
+       └── layouts
+           |── lyt-default.hbs
+           └── lyt-default.scss
 ```
 
 [//]: #     ({{/wrapWith}})

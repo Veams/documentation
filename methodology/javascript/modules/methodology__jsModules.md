@@ -13,7 +13,7 @@ Veams modules have two responsibilites:
 1. Initialization
 1. Module option handling
 
-Tip / Reminder: Module initialization is... **(insert what module initialization means in plain english)**. Options are a module's settings (e.g. animaton length, visibility). Modules have default options. Default options can be overwritten via the components JSON data file.
+Reminder: Module initialization is... **(insert what module initialization means in plain english)**. Options are a module's settings (e.g. animaton length, visibility). Modules have default options. Default options can be overwritten via the components JSON data file.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

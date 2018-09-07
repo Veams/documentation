@@ -1,7 +1,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-# CSS: Contexts
+# Contexts
 
 ## Instead of duplicating components with different styles, you should create new `contexts`. `Contexts` are variations of components that share a base set of styles and have their own context-specific styles.
 
@@ -16,12 +16,11 @@
 
 #### General Principles
 
-- To create a new context Veams uses two dashes and a name after the instrument's prefix and name to identify the new 
+- To create a new context Veams uses two dashes and a name after the instrument's prefix to identify the new
 context `.c-name--context`. 
 
 - Context styles are completely independent from other styles and should never override the global `data` attribute 
-styles
-of the instrument.
+styles of the instrument.
 
 - The main purpose of contexts is to allow components to share styles where it makes sense while still having 
 independent styles that allow the component to be reused in different contexts.

@@ -1,7 +1,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-# CSS: Modifiers
+# Modifiers
 
 ## Modifiers classes are used to make small changes to the appearance of instruments. 
 
@@ -15,7 +15,7 @@
 
 #### General Principles
 
-The following example shows you the usage of a modifier (`.is-active`) on a navigation element: 
+The the example to the right shows the usage of a modifier (`.is-active`) on a navigation element:
                
 - A modifier change is a small change. This could be a different background color, float direction or font-size. 
 
@@ -28,27 +28,24 @@ The following example shows you the usage of a modifier (`.is-active`) on a navi
 
 ### Example Modifier Snippet
 
-The following example shows the use of a several modifier classes on an article element: 
+The following example shows the use of a modifier class ("is-active") on a nav element:
 
 ``` html
-<article class="c-article--default is-bg-higlight-1" data-css="c-article">
-	<header class="article__header is-header">
-		<time class="article__header-time" datetime="">11/16/2016</time>
-		<h1 class="article__header-headline">Article Headline</h1>
-		<h2 class="article__header-subline">Article Subline</h2>
-		<p class="article__header-intro">This is an intro text which can be used in every article component.</p>
-	</header>
-	<div class="article__content is-visible">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto atque cupiditate dicta earum ex facilis harum incidunt, laboriosam officiis placeat quas recusandae, rerum, sit tempore tenetur. Impedit, velit.
-	</div>
-	<footer class="article__footer is-margin">
-		<a class="article__footer-link" href="#">Footer Link in Article</a>
-	</footer>
-</article>
+<nav class="b-navbar" id="site-menu">
+    <h2>Templating in PG</h2>
+    <ul class="navbar__list">
+        <li class="navbar__list-item">
+            <a class="navbar__link" href="../templating-in-pg/template-overview.html">Assemble Overview</a>
+        </li>
+        <li class="navbar__list-item">
+            <a class="navbar__link is-active" href="../templating-in-pg/template-layouts.html">Assemble Standard Layouts</a>
+        </li>
+        <li class="navbar__list-item">
+            <a class="navbar__link" href="../templating-in-pg/template-layouts--extended.html">Assemble Extended Layouts</a>
+        </li>
+    </ul>
+</nav>
 ```
-
-The parent element `c-article--default` has the modifier class `is-bg-higlight-1`. The child element `article__content`has
-the modifier class `is-visible`. Finally, the child element `article__footer` has the modifier class `is-margin`.
  
  [//]: #     ({{/wrapWith}})
  [//]: # ({{/wrapWith}})

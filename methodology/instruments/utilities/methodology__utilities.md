@@ -1,27 +1,42 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### General
+# Utilities
 
-On most applications we have markup which has no relationship to its content but is important to display the inner HTML in a structured way. Nice examples are grid helper classes like Foundation or Boostrap provides. 
+Most applications have markup that has no relationship to its content but is important to display the inner HTML in a structured way. Good examples are the grid helper classes that Foundation and Boostrap provide.
 
-Therefore Veams uses the instrument `Utility` and provides a neat [handlebars helper](/veams-cli/template-helper/overview.html#wrapwith-helper-block-helper-).
+To achieve the same goal, Veams provides a `Utility` instrument and powerful set of [Handlebars helper](/veams-cli/template-helper/overview.html#wrapwith-helper-block-helper-).
  
-Examples are:
+Examples Utilities are:
 
-1. Grid systems per class
+1. Grid systems classes
 2. Multiple sections in regions
 
-> You do not have to use Utilities when you think it is not necessary - this is up to you.
+> Note: You do not have to use Utilities if you think it's not necessary. It's totally up to you.
 
-### Why do we use Utilities?
+### Why use Utilities?
 
-We use Utilities to simplify the differentiation between `Components` and helper markup.
+Utilities simplify the differentiation between `Components` and helper markup.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-#### Example Snippet
+
+
+[//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+
+### Example Utlility: Grid System
+
+
+[//]: #     ({{/wrapWith}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
+
+### Grid System
 
 ``` html
 <div class="u-grid-row">
@@ -40,26 +55,12 @@ We use Utilities to simplify the differentiation between `Components` and helper
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-
-### Examples of utlilities: 
-
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-* Grid System
-
-[//]: #     ({{/wrapWith}})
-[//]: # ({{/wrapWith}})
-
-[//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-*Grid row text
+### Example Utility: Grid Row and Grid Column Classes
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-#### Grid Row
+#### Grid Row Class
 
 ``` hbs
 <div class="u-grid-row{{#unless props.padding}} is-collapsed{{/unless}}{{#if props.classes}} {{props.classes}}{{/if}}">
@@ -78,34 +79,4 @@ We use Utilities to simplify the differentiation between `Components` and helper
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
-[//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-### File and Folder Structure
 
-When you use a Template Engine, it is important to create a folder for your utilities.
-
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-Our utilities folder structure can look like this: 
-
-``` bash
-src
-├── app
-│   └──shared
-│       └── utilities
-│           └── grid
-│               ├── data
-│               │   └── grid.hjson
-│               ├── styles
-│               │   └── _grid.scss
-│               ├── templates
-│               │   ├── grid-usage.hbs
-│               │   ├── grid-col.hbs
-│               │   └── grid-row.hbs
-│               ├── grid.settings.hjson
-│               └── README.md
-```
-
-[//]: #     ({{/wrapWith}})
-[//]: # ({{/wrapWith}})

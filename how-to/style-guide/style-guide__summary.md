@@ -5,7 +5,7 @@
 
 This style guide is a reference for writing consistent documentation that is easy to understand.
 
-Instead of creating style guide from scratch, we heavily borrowed from Google's Developer Documentation Style Guide.
+Instead of creating style guide from scratch, this style guide heavily borrows from Google's Developer Documentation Style Guide.
 
 This documentation is a living guide, which means it will be reviewed regularly and changes will be when it makes sense.
 
@@ -28,7 +28,7 @@ This introduction is summary of the key points regarding how we maintain consist
 ### Formatting, Punctuation, and Organization
 - Use sentence case for document titles and section headings.
 - Use numbered lists for sequences.
-- Use bulleted lists for most other lists.
+- Use bulleted lists for non-sequential lists.
 - Use description lists for pairs of related pieces of data.
 - Use serial commas.
 - Put code-related text in code blocks.

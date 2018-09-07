@@ -1,13 +1,13 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-# CSS: Introduction
+# Introduction
 
-## The section outlines how to Veams to write CSS classes for clarity, maintainability, scalability. 
+## The section outlines how to use Veams to write CSS classes for clarity, maintainability, scalability.
 
 ### Veams uses BEM-style class naming with Regions, Components, and Utilities. 
 
-### Despite using BEM style class names, Veams class naming have a few notable differences to BEM.
+### Although Veams uses BEM style class names, it has a few notable differences to BEM.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
@@ -16,11 +16,11 @@
 
 #### General principles
 
-- Every `HTML` element get a class. You should write your class names using the `BEM` style class naming convention. 
+- Every `HTML` element get a class. You should write your class names using `BEM` style class naming.
 
-- If implemented correctly, your classes should have a structure similar to the example snippet below.
+- If implemented correctly, your classes should have a structure similar to the example snippet to the right.
 
-In the example above, note that the parent element has a the class`c-article--default`. The prefix `c` indicates that
+In the example, note that the parent element has a the class`c-article--default`. The prefix `c` indicates that
 the element is a component. 
 
 All parent elements are prefixed with a letter the tells developer what the element is. Veams has three 
@@ -34,17 +34,17 @@ prefixes:
 
 > For Utilities prefixes are optional, because many frameworks already provides helper classes.
 
-In line with BEM's class naming convention child elements in Veams projects should have two parts, the region, 
-component, or utilities name followed by two underscores `__` and brief description of what the element is. For 
+In line with BEM's class naming convention child elements in Veams projects should have two parts: the region,
+component, or utility's name followed by two underscores `__` and brief description of what the element is. For
 example: 
 
-`article__header`
+- `article__header`
 
-`overlay__close-button`
+- `overlay__close-button`
 
-`teaser__icon`
+- `teaser__icon`
 
-`teaser__icon-text`
+- `teaser__icon-text`
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -73,7 +73,7 @@ example:
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-#### How Veams class naming is different when compared to BEM.
+#### How Veams class naming and BEM are different.
 
 Your class names should only be one level deep (i.e. only have one underscore-separated section). There are two reason 
 for this:
@@ -88,6 +88,19 @@ For example:
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
+**Do**
+
+``` html
+<article class="c-article" data-css="c-article">
+	<header class="article__header">
+		<h1 class="article__header-h1">The PG methodology is designed to be used in large, long lived websites and
+		projects.</h1>
+		<h2 class="article__header-h2">This is how we make our Sass structure scalable.</h2>
+	</header>
+	<div class="article__content"></div>
+</article>
+```
+
 **Do Not**
 
 ``` html
@@ -98,20 +111,7 @@ For example:
 	</header>
 	<div class="article__content"></div>
 </article>
-``` 
-
-**Do**
-
-``` html
-<article class="c-article" data-css="c-article">
-	<header class="article__header">
-		<h1 class="article__header-h1">The PG methodology is designed to be used in large, long lived websites and 
-		projects.</h1>
-		<h2 class="article__header-h2">This is how we make our Sass structure scalable.</h2>
-	</header>
-	<div class="article__content"></div>
-</article>
-``` 
+```
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

@@ -15,9 +15,11 @@ Options have two responsibilities:
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### IDENTIFYING OPTIONS
+### IDENTIFYING OPTIONS and OPTIONS SYNTAX
 
- When a module has options, you must at add a data-js-options attribute to your markup. Including data-js-options in our markup helps developers see which constructor options were overrides.
+ When a module has options, you must at add a `data-js-options` attribute to your markup. The value if the attribute `data-js-options` must be an JSON object. You object should be wrapped in single quotes.
+
+ Including data-js-options in our markup helps developers see which constructor options were overrides.
  
  [//]: #     ({{/wrapWith}})
  [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -33,12 +35,9 @@ Options have two responsibilities:
 
  [//]: # ({{#wrapWith "grid-row"}})
  [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
- 
-### OPTIONS SYNTAX
-You should use a single quotation marks to wrap your JSON strings.
 
 ### WHAT IS THE ADVANTAGE OF USING OPTIONS?
-Options in your markup allows you to control your module's options via your backend environment.
+Having options available in your markup allows you to modify them dynamically via your backend environment.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

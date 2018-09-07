@@ -1,7 +1,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-### What is the Veams Methodology?
+# What is the Veams Methodology?
 
 Veams Methodology refers to how Veams projects are structured and built up for modularity, scalability, and 
 maintainability.

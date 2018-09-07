@@ -3,16 +3,16 @@
 
 ## Introduction
 
-This style guide is a reference for writing consistent documentation that is easy to understand. 
+This style guide is a reference for writing consistent documentation that is easy to understand.
 
-Instead of creating style guide from scratch, we heavily borrowed from Google's Developer Documentation Style Guide.
+Instead of creating style guide from scratch, this style guide heavily borrows from Google's Developer Documentation Style Guide.
 
-This documentation is a living guide, which means it will be reviewed regularly and changes will be when it makes sense. 
+This documentation is a living guide, which means it will be reviewed regularly and changes will be when it makes sense.
 
 This introduction is summary of the key points regarding how we maintain consistency and clarity with our documentation.
 
 ### Tone and Content
-- Be conversational and friendly without being frivolous.
+- Be conversational and friendly without being humorous.
 - Don't pre-announce anything in documentation.
 - Use descriptive link text.
 - Write accessibly.
@@ -28,7 +28,7 @@ This introduction is summary of the key points regarding how we maintain consist
 ### Formatting, Punctuation, and Organization
 - Use sentence case for document titles and section headings.
 - Use numbered lists for sequences.
-- Use bulleted lists for most other lists.
+- Use bulleted lists for non-sequential lists.
 - Use description lists for pairs of related pieces of data.
 - Use serial commas.
 - Put code-related text in code blocks.
@@ -39,3 +39,5 @@ This introduction is summary of the key points regarding how we maintain consist
 - Use SVG files or crushed PNG images.
 - Provide alt text.
 - Provide high-resolution images when practical.
+
+**Each bullet point should have a link with examples of good vs. bad styles

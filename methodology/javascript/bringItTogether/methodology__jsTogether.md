@@ -11,7 +11,7 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-###  To the right, you can see what markup looks like when modules, options, and items are used altogether. In this example we markup a basic navigation.
+###  To the right, you can see an example of what markup looks like when modules, options, and items are used altogether. The example markup for a basic navigation.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -43,14 +43,14 @@
 </div>
 ```
 [//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
-
-As previously mentioned, one of the main advantages of Veams is how easily developers can identify important information about components by looking at markup. Below we deconstruct the code block above to demonstrate how you can get information about a component's JavaScript functionality by reviewing it's markup.
-
-[//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
 [//]: # ({{#wrapWith "grid-row"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+
+### As previously mentioned, one of the main advantages of Veams is how easily developers can identify important information about components by looking at markup. Below we deconstruct the code block above to demonstrate how you can get information about a component's JavaScript functionality by reviewing it's markup.
+
+[//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 ### Modules 
@@ -128,8 +128,6 @@ Third, the ```li```  elements have ```data-js-item``` attributes both with the v
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 
 ```html
@@ -139,7 +137,6 @@ Third, the ```li```  elements have ```data-js-item``` attributes both with the v
 ```
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
-
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 

@@ -1,9 +1,9 @@
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
 
-# CSS: Global Styles
+# Global Styles
 
-## Global styles refer to Veams instrument's shared styles.
+## Global styles refers to css styles that Veams instrument's share.
 
 ### Veams instruments share styles via the `data-css` attribute. 
 
@@ -21,6 +21,8 @@
 - If your instrument needs global styles, use the `data-css` attribute in your markup. 
 
 - Your global styles should live in the `data-css` rule in your instrument's style sheet.
+
+Note: Using the `data-css` attribute has no advantage over using SCSS `mixins` or `extends`. However, using `data-css` does make your global styles easier to identify because they are visible in your markup.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -77,12 +79,6 @@ Context: Microsite
 		margin-bottom: 2rem;
 	}
 ```
-
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-Using global styles does not have a significant advantage over using SCSS `mixins` or `extends`. However, global 
-styles are do make your global styles more clear by declaring themselves in your markup via the `data-css` attribute.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
