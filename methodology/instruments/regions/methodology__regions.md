@@ -13,11 +13,11 @@ Of the three instruments that Veams uses, regions are the highest-level instrume
 
 The diagram below illustrates how regions are used to section a page and contain components:
 
-![alt text](/img/temp/regions.jpg "Regions")
+![diagram of layout]({{getUrl "img/regions.jpg"}})
 
 > This image is borrowed from Drupal.org.
 
-### Why use Regions?
+### Why use Regions? {.style-me}
 
 Regions allow you to separate your layout styles from other instrument's styles (`Components` and `Regions`). The main benefit of separating styles is drop-in replacement.
 
