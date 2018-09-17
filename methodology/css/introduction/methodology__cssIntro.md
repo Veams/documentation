@@ -5,9 +5,11 @@
 
 # Introduction
 
-__The section outlines how to use Veams to write CSS classes for clarity, maintainability, scalability.__
+### The section outlines how to use Veams to write CSS classes for clarity, maintainability, scalability.
 
-Veams uses BEM-style class naming with Regions, Components, and Utilities. Although Veams uses BEM style class names, it has a few notable differences to BEM.
+> Veams uses BEM-style class naming with Regions, Components, and Utilities. 
+
+Although class naming in Veams based on BEM, Veams class naming has a few notable differences to BEM.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

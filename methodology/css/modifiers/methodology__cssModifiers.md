@@ -5,7 +5,7 @@
 
 ## Modifiers classes are used to make small changes to the appearance of instruments. 
 
-### Modifiers are useful when instrument customizations are small enough not to require creating a new context.
+> Modifiers are useful when instrument customizations are small enough not to require creating a new context.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

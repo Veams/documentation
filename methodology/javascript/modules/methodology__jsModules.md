@@ -3,7 +3,7 @@
 
 # Modules
 
-## Modules define individual, segmented, pieces of JavaScript functionality. Each module is a self-contained unit with it's own file and directory.
+> Modules define individual, segmented, pieces of JavaScript functionality. Each module is a self-contained unit with it's own file and directory.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})

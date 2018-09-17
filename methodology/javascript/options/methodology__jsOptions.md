@@ -3,7 +3,7 @@
 
 # Options
 
-## Options are a module's settings (e.g. animation length, visibility, etc).
+> Options are a module's settings (e.g. animation length, visibility, etc).
 
 ### OPTIONS RESPONSIBILITIES 
 Options have two responsibilities:

@@ -5,7 +5,11 @@
 
 # Components
 
-Components are reusable HTML snippets. One page can display multiple components with different content.
+## Components are reusable building blocks of your application. 
+
+> One page can display multiple components with different content.
+
+### There are four key facts about components that you should be aware of:
 
 1. Components are always closely related to content.
 2. Component's content are variables and can change in different contexts.

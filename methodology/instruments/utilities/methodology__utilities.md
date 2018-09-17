@@ -14,7 +14,7 @@ Examples Utilities are:
 1. Grid systems classes
 2. Multiple sections in regions
 
-> Note: You do not have to use Utilities if you think it's not necessary. It's totally up to you.
+> You are not required to use Utilities. Using them is totally up to you.
 
 ### Why use Utilities?
 

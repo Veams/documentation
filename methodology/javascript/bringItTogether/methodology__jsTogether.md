@@ -3,7 +3,7 @@
 
 # Bringing It All Together
 
-## Altogether, modules, options, and items form a complete system for managing JavaScript functionality.
+> Altogether, modules, options, and items form a complete system for managing JavaScript functionality.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

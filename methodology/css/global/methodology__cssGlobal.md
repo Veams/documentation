@@ -3,9 +3,9 @@
 
 # Global Styles
 
-## Global styles refers to css styles that Veams instrument's share.
+## Global Styles refers to css styles that Veams instrument's share.
 
-### Veams instruments share styles via the `data-css` attribute. 
+> Veams instruments share styles via the `data-css` attribute. 
 
 
 [//]: #     ({{/wrapWith}})

@@ -3,7 +3,7 @@
 
 # Items
 
-## Items are HTML attributes that you use to define event handlers in your markup
+> Items are HTML attributes that you use to define event handlers in your markup
 
 
 ### ITEM RESPONSIBILITES
