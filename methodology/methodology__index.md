@@ -1,5 +1,8 @@
+
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 # What is the Veams Methodology?
 
@@ -15,8 +18,11 @@ development, backend development and extensive feedback from professional web de
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ### What differentiates Veams's Methodology from other web development methodologies?
 
@@ -33,8 +39,11 @@ Typical questions which Veams Methodology is answers are:
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ### General Overview
 
@@ -53,8 +62,11 @@ instrument.
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 #### CSS class writing system
 
@@ -73,8 +85,11 @@ Introduction section.
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 #### JavaScript module initialization, module options, and event handling
 
@@ -85,4 +100,5 @@ Veams Methodology uses `data-` attributes to bind JavaScript to DOM elements. It
 * [Event handling (`data-js-atom`)](http://localhost:3000/docs/javascript/items.html)
 
 [//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

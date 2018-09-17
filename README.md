@@ -1,5 +1,7 @@
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 # What is Veams?
 
@@ -10,8 +12,11 @@ Veams contains various (pluggable) instruments which are controlled by a custom 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ## Veams Toolkit
 
@@ -25,8 +30,11 @@ Veams contains various (pluggable) instruments which are controlled by a custom 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ### Our CLI (@veams/cli)
 
@@ -36,8 +44,11 @@ The key benefit is the rapid setup time. With @veams/cli, you can easily generat
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ## Framework
 
@@ -50,8 +61,11 @@ It is not opinionated, which means you can use the stack which best fits your pr
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ### Methodology
 
@@ -66,8 +80,11 @@ Veams-Methodology is a complete development system for your frontend stack. Typi
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 ### Components
 
@@ -78,4 +95,5 @@ All components can be found here: https://github.com/Veams
 **Do you want to see the components in action? Here you go: https://examples.veams.org/**
 
 [//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

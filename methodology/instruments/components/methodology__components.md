@@ -1,5 +1,7 @@
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-12"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
 
 # Components
 
@@ -24,16 +26,20 @@ Examples of ready-to-us Veams components include:
 - teaser - When we use teasers in sliders and other modules and the content is flexible then we define it as component.
 - list-item
 
-To learn more about Veam's component library, see [Veams-Components](/veams-components/index.html)).
+To learn more about Veams component library, see [Veams-Components](/veams-components/index.html).
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
+
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 ### Component Structure
 
-You should prefix your components with c- (or _c- for Sass files).
+You should prefix your component classes in your markup with `c-`. That makes it easier to identify where a new component starts.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -44,38 +50,42 @@ You should prefix your components with c- (or _c- for Sass files).
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
+
+[//]: # ({{/wrapWith}})
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 #### Example Component: Figure
 
+Here we have one example in Handlebars for you, where you can see the simple html structure and the usage of other components in there.
+
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-#### Figure Component
-
 ```hbs
-<figure \{{#if figureId}}id="\{{figureId}}" \{{/if}}class="c-figure\{{#if figureContextClass}}--\{figureContextClass}}\{{/if}}\{{#if figureClasses}} \{{figureClasses}}\{{/if}}" data-css="c-figure">
+<figure \{{#if figureId}}id="\{{figureId}}"\{{/if}}
+        class="c-figure\{{#if figureContextClass}}--\{{figureContextClass}}\{{/if}}\{{#if figureClasses}} \{{figureClasses}}\{{/if}}" 
+        data-css="c-figure">
+        
     <div class="figure__wrapper">
         \{{#if pictureUrlStd}}
-            \{{> c-picture}}
+            \{{> picture}}
         \{{else}}\{{#if video}}
-            \{{> c-video}}
+            \{{> video}}
         \{{/if}}\{{/if}}
     </div>
+    
     \{{#if figureCaption}}
         <figcaption class="figure__caption\{{#if figureCaptionClasses}} \{{figureCaptionClasses}}\{{/if}}">
-            \{{> c-figure__caption figureCaption}}
+            \{{> figure__caption figureCaption}}
         </figcaption>
     \{{/if}}
+    
 </figure>
-
-
 ```
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
-
-
-
-
+[//]: # ({{/wrapWith}})

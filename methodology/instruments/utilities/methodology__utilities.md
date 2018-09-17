@@ -1,3 +1,5 @@
+[//]: # ({{#wrapWith "content-section"}})
+
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
@@ -21,62 +23,36 @@ Utilities simplify the differentiation between `Components` and helper markup.
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-
-
-[//]: #     ({{/wrapWith}})
-[//]: # ({{/wrapWith}})
-
-[//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-
-### Example Utlility: Grid System
-
-
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-### Grid System
+#### HTML Example of Grid System
 
 ``` html
 <div class="u-grid-row">
-    <div class="u-grid-col is-3">
+    <div class="is-grid-col is-col-mobile-p-12 is-col-tablet-l-6">
     </div>
-    <div class="u-grid-col is-3">
+    <div class="is-grid-col is-col-mobile-p-12 is-col-tablet-l-6">
     </div>
-    <div class="u-grid-col is-3">
+    <div class="is-grid-col is-col-mobile-p-12 is-col-tablet-l-6">
     </div>
 </div>
 ```
 
-[//]: #     ({{/wrapWith}})
-[//]: # ({{/wrapWith}})
-
-[//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-### Example Utility: Grid Row and Grid Column Classes
-
-[//]: #     ({{/wrapWith}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-#### Grid Row Class
+#### Grid Row Class in Handlebars
 
 ``` hbs
 <div class="u-grid-row{{#unless props.padding}} is-collapsed{{/unless}}{{#if props.classes}} {{props.classes}}{{/if}}">
-	{{{yield}}}
+	\{{{yield}}}
 </div>
 ```
 
-#### Grid Column
+#### Grid Column in Handlebars
 
 ``` hbs
 <div class="u-grid-col\{{#if props.colClasses}} \{{props.colClasses}}\{{/if}}">
-	{{{yield}}}
+	\{{{yield}}}
 </div>
 ```
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
-
+[//]: # ({{/wrapWith}})
