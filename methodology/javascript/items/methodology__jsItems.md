@@ -7,17 +7,17 @@
 
 
 ### ITEM RESPONSIBILITES
-Items have two main responsibilities:
-1. Bind and element to a view (what does this mean?) --> Items are our JavaScript hooks?
-1. Be part of a module (what does this mean?) --> Items contain data that our modules use to deliver their functionality?
+Items have two responsibilities:
+1. Bind JavaScript modules to HTML elements. Or, in other words, `data-js-items` are your JavaScript hooks.
+1. Enable event data to get passed between markup and modules.
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### IDENTIFYING ITEMS
-When you use items, you add a `data-js-item` attribute to your markup.
+### USING ITEMS
+When you use items, you must add a `data-js-item` attribute to your markup.
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
@@ -25,7 +25,7 @@ When you use items, you add a `data-js-item` attribute to your markup.
 ### EXAMPLE SNIPPET
 
 ```html
-<a href="#id4" class="c-cta" data-js-atom="toggle-close"></a>
+<a href="#id4" class="c-cta" data-js-item="toggle-close"></a>
 ```
 
 [//]: #     ({{/wrapWith}})

@@ -97,7 +97,7 @@ Veams Methodology uses `data-` attributes to bind JavaScript to DOM elements. It
 
 * [Module initialisation (`data-js-module`)](http://localhost:3000/docs/javascript/methodology.html)
 * [Options handling (`data-js-options`)](http://localhost:3000/docs/javascript/options.html)
-* [Event handling (`data-js-atom`)](http://localhost:3000/docs/javascript/items.html)
+* [Event handling (`data-js-item`)](http://localhost:3000/docs/javascript/items.html)
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})

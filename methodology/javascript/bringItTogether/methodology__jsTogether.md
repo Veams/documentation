@@ -53,6 +53,10 @@
 ### As previously mentioned, one of the main advantages of Veams is how easily developers can identify important information about components by looking at markup. Below we deconstruct the code block above to demonstrate how you can get information about a component's JavaScript functionality by reviewing it's markup.
 
 [//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
+
+[//]: # ({{#wrapWith "content-section"}})
+[//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
 ### Modules 
@@ -64,15 +68,15 @@ This line of code has a ```data-js-module```  attribute with the value ```naviga
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### EXAMPLE SNIPPET
-
 ```html
 <div class="b-navigation" data-js-module="navigation" data-js-options='{"openOnInit": true}'>
 ```
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 
+[//]: # ({{#wrapWith "content-section"}})
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
@@ -85,15 +89,15 @@ Beside a ```data-js-module``` attribute, the line also has a ```data-js-options`
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### EXAMPLE SNIPPET
-
 ```html
 <div class="b-navigation" data-js-module="navigation" data-js-options='{"openOnInit": true}'>
 ```
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 
+[//]: # ({{#wrapWith "content-section"}})
 [//]: # ({{#wrapWith "grid-row"}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
@@ -105,8 +109,6 @@ First, the navigation anchors have ```data-js-item```  attributes both with the 
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-### EXAMPLE SNIPPET
 
 ```html
 <a class="navigation__anchorlist-link" role="tab" aria-controls="panel-1" data-js-item="nav-anchor" href="#panel-1">Capital Markets</a>
@@ -123,8 +125,6 @@ Second, the ```nav```  element has a  ```data-js-item``` attribute with the valu
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### EXAMPLE SNIPPET
-
 ```html
  <nav class="navigation__tabs" data-js-item="nav-container">
 ```
@@ -138,8 +138,6 @@ Third, the ```li```  elements have ```data-js-item``` attributes both with the v
 
 [//]: #     ({{/wrapWith}})
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
-
-### EXAMPLE SNIPPET
 
 ```html
 <li id="panel-1" role="tabpanel" aria-hidden="true" class="navigation__tab" data-js-item="nav-panel">
@@ -156,12 +154,11 @@ Finally the navigation's close button is a ```data-js-item``` attribute with the
 [//]: #     ({{/wrapWith}})      
 [//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-6"}})
 
-### EXAMPLE SNIPPET
-
 ```html
 <button class="navigation__close" data-js-item="nav-close">Close Navigation</button>
 ```
 [//]: #     ({{/wrapWith}})
+[//]: # ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 
 [//]: # ({{#wrapWith "grid-row"}})

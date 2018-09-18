@@ -15,7 +15,7 @@ The diagram below illustrates how regions are used to section a page and contain
 
 ![diagram of layout]({{getUrl "img/regions.jpg"}})
 
-> This image is borrowed from Drupal.org.
+This image is borrowed from Drupal.org.
 
 ### Why use Regions? {.style-me}
 

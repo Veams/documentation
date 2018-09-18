@@ -7,8 +7,8 @@
 
 ### OPTIONS RESPONSIBILITIES 
 Options have two responsibilities:
-1. You can use options in your markup to override options that you defined in your module's constructor
-1. Options provide you a with a valid JSON format (passing data?)  **Question: What does this mean and why does it matter?**
+1. You can use options in your markup to override the options that you define in your module's constructor
+1. Options must be written in valid JSON 
 
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
