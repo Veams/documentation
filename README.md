@@ -58,6 +58,25 @@ The purpose of Veams is to individually build up a __project based framework__ i
 
 It is not opinionated, which means you can use the stack which best fits your project, for example Backbone, React, Foundation or something else.
 
+### Typical Use Cases
+
+#### Static Page Application
+
+Veams is used in many projects in the agency I work for.
+
+The majority of projects are portal like websites, they are mostly static (CMS) and get enhanced with (a lot of) JavaScript.
+
+That's why all plugins or components are heavily optimised for that project type.
+
+#### Single Page Application
+
+Veams can also be used in SPA projects. With the new CLI you can scaffold React projects as well. There are a few blueprints which can be easily used to scaffold components.
+
+Just take a look at: 
+- [React Container Blueprint](https://github.com/Veams/bp-react-container)
+- [Redux Blueprint](https://github.com/Veams/bp-redux)
+
+
 [//]: #     ({{/wrapWith}})
 [//]: # ({{/wrapWith}})
 

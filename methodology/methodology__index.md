@@ -6,6 +6,8 @@
 
 # What is the Veams Methodology?
 
+> Projects should be developed fast, perhaps involve many developers and stay in effect for some time.
+
 Veams Methodology refers to how Veams projects are structured and built up for modularity, scalability, and 
 maintainability.
 
