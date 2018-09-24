@@ -1,7 +1,7 @@
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 # What is Veams?
 
@@ -16,7 +16,7 @@ Veams contains various (pluggable) instruments which are controlled by a custom 
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ## Veams Toolkit
 
@@ -34,7 +34,7 @@ Veams contains various (pluggable) instruments which are controlled by a custom 
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ### Our CLI (@veams/cli)
 
@@ -48,7 +48,7 @@ The key benefit is the rapid setup time. With @veams/cli, you can easily generat
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ## Framework
 
@@ -65,7 +65,7 @@ It is not opinionated, which means you can use the stack which best fits your pr
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ### Methodology
 
@@ -84,7 +84,7 @@ Veams-Methodology is a complete development system for your frontend stack. Typi
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ### Components
 

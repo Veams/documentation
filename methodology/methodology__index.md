@@ -2,7 +2,7 @@
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 # What is the Veams Methodology?
 
@@ -22,7 +22,7 @@ development, backend development and extensive feedback from professional web de
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ### What differentiates Veams's Methodology from other web development methodologies?
 
@@ -43,7 +43,7 @@ Typical questions which Veams Methodology is answers are:
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 ### General Overview
 
@@ -66,7 +66,7 @@ instrument.
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 #### CSS class writing system
 
@@ -89,7 +89,7 @@ Introduction section.
 [//]: # ({{#wrapWith "content-section"}})
 
 [//]: # ({{#wrapWith "grid-row"}})
-[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+[//]: #     ({{#wrapWith "grid-col" colClasses="is-col-tablet-l-8"}})
 
 #### JavaScript module initialization, module options, and event handling
 
